@@ -2,19 +2,30 @@
 <html>
 
 <head>
+    <style>
+        nav {
+            margin: 20px 0px;
+        }
+
+        nav a {
+            color: green;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding-left: 20px;
+        }
+    </style>
     <title>My Web Page</title>
 </head>
 
 <body>
     <h1>My First WebPage</h1>
     <br>
-    <table cellspacing="20" colour="green">
 
-        <tr>
-            <th>Webpage Contents</th>
-            <th>Information Table</th>
-            <th>Contact Form</th>
-        </tr>
+    <nav>
+        <a href="#">Webpage Contents</a>
+        <a href="#">Information Table</a>
+        <a href="#">Contact Form</a>
+    </nav>
     </table>
 </body>
 
@@ -44,9 +55,9 @@
             padding: 20px;
         }
 
-table {color:green}
-
-      
+        table {
+            color: black
+        }
     </style>
 
 
@@ -60,6 +71,7 @@ table {color:green}
     </ul>
     <table border="1" color="black" cellpadding="20" cellspacing="0">
         <!--beginning of table head-->
+        <h3>Information Table</h3>
         <thead>
             <tr>
                 <th> Item</th>
@@ -98,11 +110,11 @@ table {color:green}
         <form action="/submit-form" method="POST">
             <!-- Text Input -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="text" id="name" name="name"  required>
             <br></br>
             <!-- Email Input -->
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="email" id="email" name="email"  required>
             <br></br>
             <!-- Password Input -->
             <label for="password">Password:</label>
@@ -116,7 +128,7 @@ table {color:green}
             <label for="female">Female</label><br>
             <br></br>
             <!-- Checkbox -->
-            <label>Suscribe:</label>
+            <label>Subscribe:</label>
             <input type="checkbox" id="subscribe" name="subscribe">
             <label for="subscribe">Yes, I want to Subscribe</label><br>
             <br></br>
@@ -128,24 +140,21 @@ table {color:green}
             <label for="date">date:</label>
             <input type="date" id="date" name="date" required><br>
             <br></br>
-            <!-- Dropdown Select -->
-            <label for="country">Country:</label>
-            <select id="country" name="country">
-                <option value="NIGERIA">NIGERIA</option>
-                <option value="canada">Canada</option>
-                <option value="uk">UK</option>
-            </select><br>
+            
+            
+            
             <br></br>
 
             <!-- Textarea -->
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" rows="10" cols="50" placeholder="Enter your
-comments"></textarea>
+            <label for="message">Message:</label> <br>
+            <textarea  name="message" id="message"rows="10" cols="50">
+
+            </textarea>
 
             <br></br>
             <!-- Submit Button -->
             <input type="submit" value="Submit">
-        </form> 
-    </body>
+        </form>
+</body>
 
 </html>
